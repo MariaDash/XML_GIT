@@ -3,8 +3,8 @@
 I go to https://github.com/MariaDash, click "Repositories", click "New", make it Public, add README.md file, create repository.
 ## 2. Clone repository to local PC
 I go to repository page--> Code --> Local and copy its link. And here two options: 
-You can copy by HTTPS (unsecure without password) or SSH (need specific configuration and it is secure and always ask password).. I cpoy via HTTPS.
-On PC I go to my folder "XML", right click "Gitbash Here" and open a terminal Gitbash in this folder.
+You can copy by HTTPS (unsecure without password) or SSH (need specific configuration and it is secure and always ask password).. I copy via HTTPS.
+On PC I go to my folder "GIT", right click "Gitbash Here" and open a terminal Gitbash in this folder.
 ```
 Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ git remote set-url origin https://github.com/MariaDash/XML_GIT.git
@@ -216,29 +216,11 @@ $
 ## 12. Do one string commit.
 ```
 Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
-$ git add .
+$ git add . && git commit -m "add preferences.xml and skills.xml"
 warning: in the working copy of 'preferences.xml', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'skills.xml', LF will be replaced by CRLF the next time Git touches it
-
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
-$ git status
-On branch main
-Your branch is up to date with 'origin/main'.
-
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-        new file:   git
-        new file:   preferences.xml
-        new file:   skills.xml
-
-
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
-$ git commit -m "add skills.xml and preferences.xml"
-[main e1d233c] add skills.xml and preferences.xml
- 3 files changed, 23 insertions(+)
- create mode 100644 git
- create mode 100644 preferences.xml
- create mode 100644 skills.xml
+[main 7bcaa53] add preferences.xml and skills.xml
+ 2 files changed, 1 insertion(+), 1 deletion(-)
 
 Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
 $ git status
@@ -250,6 +232,7 @@ nothing to commit, working tree clean
 
 Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
 $
+
 ```
 ## 13. Send 2 files at once to an external repository.
 ```
