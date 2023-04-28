@@ -19,7 +19,7 @@ Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git (main)
 $ cd XML
 
 Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
-$ ls XML/
+$ ls 
 README.md
 
 Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
