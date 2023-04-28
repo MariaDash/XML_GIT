@@ -1,52 +1,57 @@
 # XML_GIT_Homework_1
-## 1. Create an external repository called XML_GIT on Github site.
+## 1. Create an external repository called XML on Github site.
 I go to https://github.com/MariaDash, click "Repositories", click "New", make it Public, add README.md file, create repository.
 ## 2. Clone repository to local PC
 I go to repository page--> Code --> Local and copy its link. And here two options: 
 You can copy by HTTPS (unsecure without password) or SSH (need specific configuration and it is secure and always ask password).. I copy via HTTPS.
 On PC I go to my folder "GIT", right click "Gitbash Here" and open a terminal Gitbash in this folder.
 ```
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
-$ git remote set-url origin https://github.com/MariaDash/XML_GIT.git
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
-$ git remote -v
-origin  https://github.com/MariaDash/XML_GIT.git (fetch)
-origin  https://github.com/MariaDash/XML_GIT.git (push)
-
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
-$ git clone https://github.com/MariaDash/XML_GIT.git
-Cloning into 'XML_GIT'...
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git (main)
+$ git clone https://github.com/MariaDash/XML.git
+Cloning into 'XML'...
 remote: Enumerating objects: 3, done.
 remote: Counting objects: 100% (3/3), done.
 remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
 Receiving objects: 100% (3/3), done.
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
-$ ls
-XML_GIT/
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git (main)
+$ cd XML
 
 Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
-$ ls XML_GIT/
+$ ls XML/
 README.md
+
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
+$
+```
+Note: if you need to change your working repository then:
+```
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
+$ git remote set-url origin https://github.com/MariaDash/XML.git
+
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
+$ git remote -v
+origin  https://github.com/MariaDash/XML.git (fetch)
+origin  https://github.com/MariaDash/XML.git (push)
 
 Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $
 ```
 ## 3. Inside the local XML, create a “new.xml” file.
 ```
- Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+ Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ touch new.xml
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $
 ```
 ## 4. Add a file for tracking
 ```
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ git add new.xml
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ git status
 On branch main
 Your branch is up to date with 'origin/main'.
@@ -56,23 +61,23 @@ Changes to be committed:
         new file:   new.xml
 
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $
 ```
 ## 5. Do commit it.
 ```
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ git commit -m "creating new.xml"
 [main 6ed971d] creating new.xml
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 new.xml
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ 
 ```
 ## 6. Send the file to remote repository
 ```
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ git push
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
@@ -80,18 +85,18 @@ Delta compression using up to 4 threads
 Compressing objects: 100% (2/2), done.
 Writing objects: 100% (3/3), 277 bytes | 138.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/MariaDash/XML_GIT.git
+To https://github.com/MariaDash/XML.git
    ea8eb0a..6ed971d  main -> main
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $
 ```
 ## 7. Edit the content of the “new.xml” file - write information about yourself (name, age, number of pets, future desired salary). Everything is written in XML format.
 ```
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ vim new.xml
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ cat new.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <info>
@@ -105,12 +110,12 @@ $ cat new.xml
 
 </info>
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $
 ```
 ## 8. Send chandes to remote repository
 ```
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ git status
 On branch main
 Your branch is up to date with 'origin/main'.
@@ -122,13 +127,13 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ git commit -am "changes in new.xml"
 warning: in the working copy of 'new.xml', LF will be replaced by CRLF the next time Git touches it
 [main 402e148] changes in new.xml
  1 file changed, 11 insertions(+)
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ git status
 On branch main
 Your branch is ahead of 'origin/main' by 1 commit.
@@ -136,7 +141,7 @@ Your branch is ahead of 'origin/main' by 1 commit.
 
 nothing to commit, working tree clean
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ git push
 Enumerating objects: 5, done.
 Counting objects: 100% (5/5), done.
@@ -144,35 +149,35 @@ Delta compression using up to 4 threads
 Compressing objects: 100% (3/3), done.
 Writing objects: 100% (3/3), 403 bytes | 134.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
-To https://github.com/MariaDash/XML_GIT.git
+To https://github.com/MariaDash/XML.git
    6ed971d..402e148  main -> main
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $
 ```
 ## 9. Create preferences.xml file
 ```
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ touch preferences.xml
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ ls
 README.md  new.xml  preferences.xml
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $
 ```
 ## 10. In the preferences.xml file, add information about your preferences (Favorite movie, favorite series, favorite food, favorite season, side you would like to visit) in XML format.
 ```
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ vim preferences.xml
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ cat preferences.xml
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ vim preferences.xml
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ cat preferences.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <preferences>
@@ -186,16 +191,16 @@ $ cat preferences.xml
 </preferences>
 
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $
 
 ```
 ## 11. Create a sklls.xml file add information about the skills that will be studied in the course in XML format.
 ```
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ vim skills.xml
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ cat skills.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <skills>
@@ -210,19 +215,19 @@ $ cat skills.xml
         <value9>ADB</value9>
 </skills>
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $
 ```
 ## 12. Do one string commit.
 ```
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ git add . && git commit -m "add preferences.xml and skills.xml"
 warning: in the working copy of 'preferences.xml', LF will be replaced by CRLF the next time Git touches it
 warning: in the working copy of 'skills.xml', LF will be replaced by CRLF the next time Git touches it
 [main 7bcaa53] add preferences.xml and skills.xml
  2 files changed, 1 insertion(+), 1 deletion(-)
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ git status
 On branch main
 Your branch is ahead of 'origin/main' by 1 commit.
@@ -230,13 +235,13 @@ Your branch is ahead of 'origin/main' by 1 commit.
 
 nothing to commit, working tree clean
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $
 
 ```
 ## 13. Send 2 files at once to an external repository.
 ```
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ git push
 Enumerating objects: 6, done.
 Counting objects: 100% (6/6), done.
@@ -246,10 +251,10 @@ Writing objects: 100% (5/5), 713 bytes | 178.00 KiB/s, done.
 Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
 remote: This repository moved. Please use the new location:
 remote:   https://github.com/MariaDash/XML.git
-To https://github.com/MariaDash/XML_GIT.git
+To https://github.com/MariaDash/XML.git
    402e148..e1d233c  main -> main
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $
 ```
 
@@ -259,14 +264,14 @@ $
 ## 17. Make Commit changes (save) changes on the web interface.
 ## 18. Synchronize external and local XML repository
 ```
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ git pull
 remote: Enumerating objects: 9, done.
 remote: Counting objects: 100% (9/9), done.
 remote: Compressing objects: 100% (7/7), done.
 remote: Total 8 (delta 3), reused 0 (delta 0), pack-reused 0
 Unpacking objects: 100% (8/8), 1.85 KiB | 65.00 KiB/s, done.
-From https://github.com/MariaDash/XML_GIT
+From https://github.com/MariaDash/XML
    e1d233c..4b09b5b  main       -> origin/main
 Updating e1d233c..4b09b5b
 Fast-forward
@@ -276,11 +281,10 @@ Fast-forward
  create mode 100644 bug_report.xml
  delete mode 100644 git
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
-$ ls
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML
 README.md  bug_report.xml  new.xml  preferences.xml  skills.xml
 
-Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML_GIT (main)
+Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $
 ```
 
