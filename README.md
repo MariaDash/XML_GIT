@@ -195,7 +195,7 @@ Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $
 
 ```
-## 11. Create a sklls.xml file add information about the skills that will be studied in the course in XML format.
+## 11. Create a skills.xml file add information about the skills that will be studied in the course in XML format.
 ```
 Admin@DESKTOP-V6V9F0T MINGW64 /d/Testing_Course/Git/XML (main)
 $ vim skills.xml
