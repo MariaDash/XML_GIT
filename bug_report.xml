@@ -10,13 +10,13 @@
       <Pre-condition>user is registered</Pre-condition>
       <Env>Windows 10, Google Chrome 112, Firefox, Opera</Env>
       <STR>
-           1. Navigate to the site.com
-           2. In the login block enter test data in login and password fields
-           3. Push "login" button
-           4. Login button is disabled. No warning message.
+            <First>Navigate to the site.com</First>
+            <Second>In the "login" block enter test data in "login" and "password" fields</Second>
+            <Third>Push "Login" button</Third>
+            <Fourth>"Login" button is disabled. No warning message.</Fourth>
       </STR>
-      <ER>Login button is enabled, user log in.</ER>
-      <AR>Login button is disabled. User can not log in.</AR>
+      <ER>"Login" button is enabled, user log in.</ER>
+      <AR>"Login" button is disabled. User can not log in.</AR>
       <Link_attach>Link</Link_attach>
       <Bug_started>@me</Bug_started>
       <Bug_Repro>@someone_else</Bug_Repro>
