@@ -4,7 +4,7 @@
       <Module>LogIn</Module>
       <Severity>Critical</Severity>
       <Priority>High</Priority>
-      <Title>"Login" button disabled when pushing it after adding valid login & password</Title>
+      <Title>"Login" button disabled when pushing it after adding valid login and password</Title>
       <Test_Data>
            <login>Adam</login>
            <password>abc123</password>
