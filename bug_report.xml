@@ -2,6 +2,8 @@
 <info>
       <ID>1</ID>
       <Module>LogIn</Module>
+      <Severity>Critical</Severity>
+      <Priority>High</Priority>
       <Title>"Login" button disabled when pushing it after adding valid login & password</Title>
       <Test_Data>
            <login>Adam</login>
